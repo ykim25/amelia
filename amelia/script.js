@@ -38,6 +38,7 @@ function launchPlane() {
   }
   //logic to launch plane here
   else
+  //just for testing
     selectedOptions.innerHTML = `selected ${selectedLift} ${selectedThrust} ${selectedWeight}`;
 }
 
