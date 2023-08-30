@@ -1,0 +1,24 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.game-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: skyblue;
+  position: relative;
+}
+
+.plane {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  transform-origin: center;
+  transform: rotate(0deg);
+}
