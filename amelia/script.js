@@ -2,6 +2,8 @@ const plane = document.querySelector('.plane');
 const liftOptions = document.querySelectorAll('.liftOption');
 const thrustOptions = document.querySelectorAll('.thrustOption');
 const weightOptions = document.querySelectorAll('.weightOption');
+const testButton = document.querySelector('#test');
+const selectedOptions = document.querySelector('.selectedOptions');
 let angle = 0;
 
 function updatePlaneRotation(event) {
@@ -17,16 +19,30 @@ function updatePlaneRotation(event) {
 function handleOptionSelection(options) {
   options.forEach((option) => {
     option.addEventListener('click', () => {
-      // Remove the 'selected' class from all buttons
       options.forEach((opt) => opt.classList.remove('selected'));
-
-      // Add the 'selected' class to the clicked button
       option.classList.add('selected');
     });
   });
+}
+
+function launchPlane() {
+  const selectedLift = document.querySelector('.liftOption.selected');
+  const selectedThrust = document.querySelector('.thrustOption.selected');
+  const selectedWeight = document.querySelector('.weightOption.selected');
+  if (
+    selectedLift === null ||
+    selectedThrust === null ||
+    selectedWeight === null
+  ) {
+    selectedOptions.innerHTML = 'must choose option for each';
+  }
+  //logic to launch plane here
+  else
+    selectedOptions.innerHTML = `selected ${selectedLift} ${selectedThrust} ${selectedWeight}`;
 }
 
 handleOptionSelection(liftOptions);
 handleOptionSelection(thrustOptions);
 handleOptionSelection(weightOptions);
 document.addEventListener('keydown', updatePlaneRotation);
+testButton.addEventListener('click', launchPlane);
