@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Mina:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monofett:wght@400&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-mina: Mina;
+  --font-monofett: Monofett;
+  --font-russo-one: "Russo One";
+
+  /* font sizes */
+  --font-size-13xl: 32px;
+  --font-size-5xl: 24px;
+  --font-size-77xl: 96px;
+  --font-size-7xl-3: 26.3px;
+  --font-size-13xl-9: 32.9px;
+  --font-size-86xl-1: 105.1px;
+  --font-size-base: 16px;
+
+  /* Colors */
+  --color-gray: #f9ffff;
+  --color-black: #000;
+  --color-cadetblue-100: #4ca6b0;
+  --color-cadetblue-200: #54888e;
+  --color-cadetblue-300: #3f8e97;
+  --color-white: #fff;
+  --color-paleturquoise: rgba(167, 255, 234, 0.5);
+  --color-indianred: #e6635e;
+  --color-darkslategray: #10314b;
+
+  /* Paddings */
+  --padding-11xs: 2px;
+  --padding-33xl: 52px;
+  --padding-11xs-6: 1.6px;
+  --padding-23xl-7: 42.7px;
+
+  /* border radiuses */
+  --br-5xs: 8px;
+  --br-13xl: 32px;
+  --br-9xs: 4px;
+  --br-base: 16px;
+  --br-6xs-6: 6.6px;
+  --br-7xl-3: 26.3px;
+}
