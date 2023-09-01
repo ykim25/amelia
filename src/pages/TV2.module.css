@@ -27,10 +27,10 @@
   height: 240.92px;
 }
 .towerIcon {
-  top: 0;
-  left: 160.83px;
+  top: -0.04px;
+  left: 160.17px;
   width: 268.08px;
-  height: 372.5px;
+  height: 372.53px;
 }
 .red,
 .target1,
@@ -43,7 +43,7 @@
 }
 .target1 {
   border-radius: 6.57px;
-  background-color: var(--color-indianred);
+  background-color: #e6635e;
   height: 21.7px;
 }
 .red,
@@ -58,10 +58,10 @@
   height: 21.7px;
 }
 .targetChild {
-  top: 29.09px;
-  left: 73.58px;
-  width: 26.07px;
-  height: 26.07px;
+  top: 40.38px;
+  left: 57.52px;
+  width: 22.58px;
+  height: 19.55px;
 }
 .landHere,
 .rSide,
@@ -232,7 +232,7 @@
   bottom: 6.76%;
   left: 30.89%;
   border-radius: var(--br-base);
-  background-color: var(--color-cadetblue-300);
+  background-color: var(--color-cadetblue-200);
   display: flex;
   flex-direction: row;
   padding: var(--padding-11xs) var(--padding-33xl);
@@ -276,29 +276,22 @@
 }
 .ui {
   height: 50.33%;
-  width: 30.35%;
   top: 22.15%;
-  right: 40.42%;
   bottom: 27.53%;
-  left: 29.24%;
+  left: calc(50% - 219px);
+  width: 437px;
   font-size: var(--font-size-77xl);
-  color: var(--color-cadetblue-300);
+  color: var(--color-cadetblue-200);
 }
 .water {
   top: 960px;
   left: 0;
-  background-color: var(--color-paleturquoise);
+  background-color: rgba(167, 255, 234, 0.5);
   width: 1440px;
   height: 65px;
 }
-.tablet,
 .tv2 {
-  overflow: hidden;
-}
-.tv2 {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   background: linear-gradient(-89.4deg, rgba(0, 159, 201, 0.37), transparent),
     linear-gradient(
       -86.3deg,
@@ -311,14 +304,9 @@
       rgba(255, 255, 255, 0.25)
     ),
     #75e6ff;
-  width: 1440px;
-  height: 1025px;
-}
-.tablet {
-  position: relative;
-  background-color: var(--color-white);
   width: 100%;
-  height: 1024px;
+  height: 1025px;
+  overflow: hidden;
   text-align: center;
   font-size: 26.28px;
   color: var(--color-darkslategray);
