@@ -4,10 +4,7 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import TV1 from "./pages/TV1";
-import Desktop from "./pages/Desktop";
-import Tablet from "./pages/Tablet";
-import Mobile from "./pages/Mobile";
+import TV2 from "./pages/TV2";
 import { useEffect } from "react";
 
 function App() {
@@ -30,18 +27,6 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/desktop":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/tablet":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/mobile":
-        title = "";
-        metaDescription = "";
-        break;
     }
 
     if (title) {
@@ -60,10 +45,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<TV1 />} />
-      <Route path="/desktop" element={<Desktop />} />
-      <Route path="/tablet" element={<Tablet />} />
-      <Route path="/mobile" element={<Mobile />} />
+      <Route path="/" element={<TV2 />} />
     </Routes>
   );
 }
