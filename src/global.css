@@ -1,26 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Monofett:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mina:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Russo+One:wght@400&display=swap");
+
 body {
   margin: 0;
   line-height: normal;
 }
+
 :root {
   /* fonts */
-  --font-mina: Mina;
   --font-monofett: Monofett;
+  --font-mina: Mina;
   --font-russo-one: "Russo One";
 
   /* font sizes */
-  --font-size-5xl: 24px;
-  --font-size-13xl: 32px;
   --font-size-77xl: 96px;
+  --font-size-5xl: 24px;
+  --font-size-smi: 13px;
+  --font-size-13xl: 32px;
   --font-size-7xl-3: 26.3px;
 
   /* Colors */
-  --color-black: #000;
   --color-cadetblue-100: #4ca6b0;
-  --color-cadetblue-200: #3f8e97;
+  --color-black: #000;
   --color-white: #fff;
   --color-gray: #f9ffff;
   --color-darkslategray: #10314b;
