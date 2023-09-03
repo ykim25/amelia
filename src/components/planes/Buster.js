@@ -1,4 +1,5 @@
-import styles from "./Buster.module.css";
+import styles from './Buster.module.css';
+import LaunchButton from '../buttons/LaunchButton';
 const Buster = () => {
   return (
     <div className={styles.busterselected}>
@@ -9,9 +10,11 @@ const Buster = () => {
         </div>
       </div>
       <div className={styles.launch}>
-        <div className={styles.thrust}>launch</div>
+        <div className={styles.thrust}>
+          <LaunchButton plane={'Buster'} />
+        </div>
       </div>
-      <img className={styles.busterselectedChild} alt="" src="/group-21.svg" />
+      <img className={styles.busterselectedChild} alt='' src='/group-21.svg' />
       <div className={styles.busterselectedInner}>
         <div className={styles.thrustParent}>
           <div className={styles.thrust}>Thrust: ++++</div>

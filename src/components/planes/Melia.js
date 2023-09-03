@@ -1,4 +1,5 @@
-import styles from "./Melia.module.css";
+import styles from './Melia.module.css';
+import LaunchButton from '../buttons/LaunchButton';
 const Melia = () => {
   return (
     <div className={styles.meliaselected}>
@@ -9,9 +10,11 @@ const Melia = () => {
         </div>
       </div>
       <div className={styles.launch}>
-        <div className={styles.thrust}>launch</div>
+        <div className={styles.thrust}>
+          <LaunchButton plane={'Melia'} />
+        </div>
       </div>
-      <img className={styles.meliaselectedChild} alt="" src="/group-214.svg" />
+      <img className={styles.meliaselectedChild} alt='' src='/group-214.svg' />
       <div className={styles.meliaselectedInner}>
         <div className={styles.thrustParent}>
           <div className={styles.thrust}>Thrust: ++</div>

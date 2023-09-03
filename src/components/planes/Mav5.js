@@ -1,4 +1,5 @@
-import styles from "./Mav5.module.css";
+import styles from './Mav5.module.css';
+import LaunchButton from '../buttons/LaunchButton';
 const Mav5 = () => {
   return (
     <div className={styles.mav5selected}>
@@ -9,9 +10,11 @@ const Mav5 = () => {
         </div>
       </div>
       <div className={styles.launch}>
-        <div className={styles.thrust}>launch</div>
+        <div className={styles.thrust}>
+          <LaunchButton plane={'Mav5'} />
+        </div>
       </div>
-      <img className={styles.mav5selectedChild} alt="" src="/group-211.svg" />
+      <img className={styles.mav5selectedChild} alt='' src='/group-211.svg' />
       <div className={styles.mav5selectedInner}>
         <div className={styles.thrustParent}>
           <div className={styles.thrust}>Thrust: ++</div>

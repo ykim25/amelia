@@ -1,4 +1,5 @@
-import styles from "./Neha1.module.css";
+import styles from './Neha1.module.css';
+import LaunchButton from '../buttons/LaunchButton';
 const Neha1 = () => {
   return (
     <div className={styles.neha1selected}>
@@ -9,9 +10,11 @@ const Neha1 = () => {
         </div>
       </div>
       <div className={styles.launch}>
-        <div className={styles.thrust}>launch</div>
+        <div className={styles.thrust}>
+          <LaunchButton plane={'Neha1'} />
+        </div>
       </div>
-      <img className={styles.neha1selectedChild} alt="" src="/group-215.svg" />
+      <img className={styles.neha1selectedChild} alt='' src='/group-215.svg' />
       <div className={styles.neha1selectedInner}>
         <div className={styles.thrustParent}>
           <div className={styles.thrust}>Thrust: ++</div>

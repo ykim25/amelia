@@ -1,4 +1,5 @@
-import styles from "./Will7.module.css";
+import styles from './Will7.module.css';
+import LaunchButton from '../buttons/LaunchButton';
 const Will7 = () => {
   return (
     <div className={styles.will7selected}>
@@ -9,9 +10,11 @@ const Will7 = () => {
         </div>
       </div>
       <div className={styles.launch}>
-        <div className={styles.thrust}>launch</div>
+        <div className={styles.thrust}>
+          <LaunchButton plane={'Will7'} />
+        </div>
       </div>
-      <img className={styles.will7selectedChild} alt="" src="/group-212.svg" />
+      <img className={styles.will7selectedChild} alt='' src='/group-212.svg' />
       <div className={styles.will7selectedInner}>
         <div className={styles.thrustParent}>
           <div className={styles.thrust}>Thrust: ++</div>

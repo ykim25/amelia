@@ -1,4 +1,5 @@
-import styles from "./Tom6.module.css";
+import styles from './Tom6.module.css';
+import LaunchButton from '../buttons/LaunchButton';
 const Tom6 = () => {
   return (
     <div className={styles.tom6selected}>
@@ -9,9 +10,11 @@ const Tom6 = () => {
         </div>
       </div>
       <div className={styles.launch}>
-        <div className={styles.thrust}>launch</div>
+        <div className={styles.thrust}>
+          <LaunchButton plane={'Tom6'} />
+        </div>
       </div>
-      <img className={styles.tom6selectedChild} alt="" src="/group-213.svg" />
+      <img className={styles.tom6selectedChild} alt='' src='/group-213.svg' />
       <div className={styles.tom6selectedInner}>
         <div className={styles.thrustParent}>
           <div className={styles.thrust}>Thrust: +</div>

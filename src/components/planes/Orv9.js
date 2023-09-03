@@ -1,4 +1,5 @@
-import styles from "./Orv9.module.css";
+import styles from './Orv9.module.css';
+import LaunchButton from '../buttons/LaunchButton';
 const Orv9 = () => {
   return (
     <div className={styles.orv9selected}>
@@ -9,9 +10,11 @@ const Orv9 = () => {
         </div>
       </div>
       <div className={styles.launch}>
-        <div className={styles.thrust}>launch</div>
+        <div className={styles.thrust}>
+          <LaunchButton plane={'Orv9'} />
+        </div>
       </div>
-      <img className={styles.orv9selectedChild} alt="" src="/group-216.svg" />
+      <img className={styles.orv9selectedChild} alt='' src='/group-216.svg' />
       <div className={styles.orv9selectedInner}>
         <div className={styles.thrustParent}>
           <div className={styles.thrust}>Thrust: Ø</div>
