@@ -1,5 +1,4 @@
 .groupChild {
-  position: absolute;
   height: 100%;
   width: 100%;
   top: 0;
@@ -9,11 +8,14 @@
   border-radius: var(--br-13xl);
   background-color: var(--color-white);
 }
+.groupChild,
 .lift,
-.youLose {
+.lift1 {
   position: absolute;
+}
+.lift1 {
   top: 0;
-  left: calc(50% - 201.5px);
+  left: 0;
 }
 .lift {
   height: 18.76%;
@@ -31,10 +33,10 @@
   bottom: -9.53%;
   left: -8.92%;
 }
-.playAgain {
+.playAgain1 {
   position: relative;
 }
-.playagain {
+.playAgain {
   position: absolute;
   height: 10.66%;
   top: 91.31%;
@@ -53,7 +55,7 @@
   color: var(--color-white);
   font-family: var(--font-mina);
 }
-.loseChild {
+.uiChild {
   position: absolute;
   top: 140px;
   left: calc(50% - 177.5px);
@@ -61,7 +63,7 @@
   height: 294px;
   overflow: hidden;
 }
-.lose {
+.ui {
   width: 437px;
   height: 515.85px;
   text-align: left;

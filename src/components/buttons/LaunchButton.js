@@ -1,10 +1,10 @@
 import styles from "./LaunchButton.module.css";
-const LaunchButton = () => {
+const Launch = () => {
   return (
-    <div className={styles.launchButton}>
-      <div className={styles.launch}>launch</div>
+    <div className={styles.launch}>
+      <div className={styles.launch1}>launch</div>
     </div>
   );
 };
 
-export default LaunchButton;
+export default Launch;

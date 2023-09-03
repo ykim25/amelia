@@ -1,30 +1,29 @@
-import styles from "./Orv9.module.css";
-
-const Orv9 = () => {
+import styles from "./UI2.module.css";
+const UI2 = () => {
   return (
     <div className={styles.ui}>
       <div className={styles.rectangleParent}>
         <div className={styles.groupChild} />
         <div className={styles.lift}>
-          <div className={styles.div}>ORV-9</div>
+          <div className={styles.div}>BUST3R</div>
         </div>
       </div>
       <div className={styles.launchWrapper}>
         <div className={styles.launch}>launch</div>
       </div>
-      <img className={styles.uiChild} alt="" src="/group-214.svg" />
+      <img className={styles.uiChild} alt="" src="/group-2111.svg" />
       <div className={styles.uiInner}>
         <div className={styles.thrustParent}>
-          <div className={styles.launch}>Thrust: Ø</div>
-          <div className={styles.launch}>Weight: - -</div>
+          <div className={styles.launch}>Thrust: ++++</div>
+          <div className={styles.launch}>Weight: Ø</div>
           <div className={styles.launch}>Lift: Ø</div>
         </div>
       </div>
       <div className={styles.wrapper}>
-        <div className={styles.div}>1/7</div>
+        <div className={styles.div}>7/7</div>
       </div>
     </div>
   );
 };
 
-export default Orv9;
+export default UI2;

@@ -1,10 +1,10 @@
 import styles from "./PLayAgain.module.css";
-const PLayAgain = () => {
+const PlayAgain = () => {
   return (
-    <div className={styles.playAgain}>
-      <div className={styles.playAgain1}>play again</div>
+    <div className={styles.playagain}>
+      <div className={styles.playAgain}>play again</div>
     </div>
   );
 };
 
-export default PLayAgain;
+export default PlayAgain;

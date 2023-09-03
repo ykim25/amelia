@@ -1,7 +1,7 @@
-.playAgain1 {
+.playAgain {
   position: relative;
 }
-.playAgain {
+.playagain {
   border-radius: var(--br-base);
   background-color: var(--color-cadetblue-100);
   display: flex;
