@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './game.css'; // Ensure the correct path to your CSS file
 import Orv9 from '../components/planes/Orv9';
 import Neha1 from '../components/planes/Neha1';
@@ -9,9 +9,27 @@ import Mav5 from '../components/planes/Mav5';
 import Buster from '../components/planes/Buster';
 import NextButton from '../components/buttons/NextButton';
 import PreviousButton from '../components/buttons/PreviousButton';
+import axios from 'axios';
 
 export default function Game() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [gameConditions, setGameConditions] = useState({
+    location: null,
+    windSpeed: null,
+    windDirection: null,
+  });
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        
+      } catch (error) {
+        
+      }
+    }
+    const randomDirection = Math.random() < 0.5 ? 'left' : 'right';
+  }, []);
+
   const planes = [Orv9, Neha1, Melia, Tom6, Will7, Mav5, Buster];
 
   const CurrentPlane = planes[currentIndex];
