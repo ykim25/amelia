@@ -22,12 +22,43 @@ export default function Game() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        
+        //get location
+        const locationResponse = await axios.get(
+          'https://ipinfo.io/?token=86747a7a9a810d'
+        );
+        const locationData = locationResponse.data;
+        const [latitude, longitude] = locationData.loc.split(',');
+        const location = locationData.city;
+
+        // get wind
+        const stormglassApiKey =
+          '9607a3fa-4863-11ee-92e6-0242ac130002-9607a4d6-4863-11ee-92e6-0242ac130002';
+        const headers = {
+          Authorization: stormglassApiKey,
+        };
+
+        const windResponse = await axios.get(
+          `https://api.stormglass.io/v2/weather/point?lat=${latitude}&lng=${longitude}&params=windSpeed`,
+          { headers }
+        );
+
+        const stormglassData = windResponse.data;
+        const windSpeed = stormglassData.hours[0].windSpeed.icon;
+
+        //get direction
+        const randomDirection = Math.random() < 0.5 ? 'Left' : 'Right';
+
+        setWindInfo({
+          location,
+          windSpeed,
+          windDirection: randomDirection,
+        });
       } catch (error) {
-        
+        console.error('An error occurred:', error);
       }
-    }
-    const randomDirection = Math.random() < 0.5 ? 'left' : 'right';
+    };
+
+    fetchData();
   }, []);
 
   const planes = [Orv9, Neha1, Melia, Tom6, Will7, Mav5, Buster];
