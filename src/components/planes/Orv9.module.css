@@ -14,7 +14,7 @@
   height: 18.76%;
   top: 5.66%;
   bottom: 75.58%;
-  left: calc(50% - 137.5px);
+  left: calc(50% - 138.5px);
   width: 276px;
 }
 .rectangleParent {
@@ -29,9 +29,6 @@
   font-family: var(--font-monofett);
 }
 .launch {
-  position: relative;
-}
-.launchWrapper {
   position: absolute;
   height: 10.66%;
   top: 91.31%;
@@ -49,7 +46,7 @@
   font-size: var(--font-size-13xl);
   color: var(--color-white);
 }
-.uiChild {
+.orv9selectedChild {
   position: absolute;
   height: 51.18%;
   top: 30.24%;
@@ -58,8 +55,11 @@
   max-height: 100%;
   width: 427.31px;
 }
-.thrustParent,
-.uiInner {
+.thrust {
+  position: relative;
+}
+.orv9selectedInner,
+.thrustParent {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -68,7 +68,7 @@
 .thrustParent {
   width: 93px;
 }
-.uiInner {
+.orv9selectedInner {
   position: absolute;
   height: 12.21%;
   top: 35.48%;
@@ -92,7 +92,7 @@
   text-align: center;
   font-size: var(--font-size-5xl);
 }
-.ui {
+.orv9selected {
   width: 437px;
   height: 515.85px;
   text-align: left;

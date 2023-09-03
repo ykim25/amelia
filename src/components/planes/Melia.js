@@ -1,23 +1,22 @@
 import styles from "./Melia.module.css";
-
 const Melia = () => {
   return (
-    <div className={styles.ui}>
+    <div className={styles.meliaselected}>
       <div className={styles.rectangleParent}>
         <div className={styles.groupChild} />
         <div className={styles.lift}>
           <div className={styles.div}>MELIA</div>
         </div>
       </div>
-      <div className={styles.launchWrapper}>
-        <div className={styles.launch}>launch</div>
+      <div className={styles.launch}>
+        <div className={styles.thrust}>launch</div>
       </div>
-      <img className={styles.uiChild} alt="" src="/group-215.svg" />
-      <div className={styles.uiInner}>
+      <img className={styles.meliaselectedChild} alt="" src="/group-214.svg" />
+      <div className={styles.meliaselectedInner}>
         <div className={styles.thrustParent}>
-          <div className={styles.launch}>Thrust: ++</div>
-          <div className={styles.launch}>Weight: Ø</div>
-          <div className={styles.launch}>Lift: Ø</div>
+          <div className={styles.thrust}>Thrust: ++</div>
+          <div className={styles.thrust}>Weight: Ø</div>
+          <div className={styles.thrust}>Lift: Ø</div>
         </div>
       </div>
       <div className={styles.wrapper}>

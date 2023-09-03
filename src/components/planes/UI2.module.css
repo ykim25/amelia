@@ -9,18 +9,13 @@
   border-radius: var(--br-13xl);
   background-color: var(--color-white);
 }
-.lift,
-.youLose {
-  position: absolute;
-  top: 0;
-  left: calc(50% - 201.5px);
-}
 .lift {
+  position: absolute;
   height: 18.76%;
   top: 2.83%;
   bottom: 78.41%;
-  left: calc(50% - 172.5px);
-  width: 345px;
+  left: calc(50% - 165.5px);
+  width: 332px;
 }
 .rectangleParent {
   position: absolute;
@@ -30,16 +25,18 @@
   right: -13.04%;
   bottom: -9.53%;
   left: -8.92%;
+  color: var(--color-cadetblue-100);
+  font-family: var(--font-monofett);
 }
-.playAgain {
+.launch {
   position: relative;
 }
-.playagain {
+.launchWrapper {
   position: absolute;
   height: 10.66%;
   top: 91.31%;
   bottom: -1.97%;
-  left: calc(50% - 125.5px);
+  left: calc(50% - 98.5px);
   border-radius: var(--br-base);
   background-color: var(--color-cadetblue-100);
   display: flex;
@@ -51,21 +48,55 @@
   text-align: center;
   font-size: var(--font-size-13xl);
   color: var(--color-white);
-  font-family: var(--font-mina);
 }
-.loseChild {
+.uiChild {
   position: absolute;
-  top: 140px;
-  left: calc(50% - 177.5px);
-  width: 356px;
-  height: 294px;
-  overflow: hidden;
+  height: 46.53%;
+  top: 32.57%;
+  bottom: 20.91%;
+  left: calc(50% - 204.5px);
+  max-height: 100%;
+  width: 427.31px;
 }
-.lose {
+.thrustParent,
+.uiInner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.thrustParent {
+  width: 93px;
+}
+.uiInner {
+  position: absolute;
+  height: 12.21%;
+  top: 35.48%;
+  bottom: 52.31%;
+  left: calc(50% - 120.5px);
+  font-size: var(--font-size-smi);
+}
+.div,
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wrapper {
+  height: 7.37%;
+  width: 8.24%;
+  top: 70.18%;
+  right: 18.31%;
+  bottom: 22.46%;
+  left: 73.46%;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+}
+.ui {
   width: 437px;
   height: 515.85px;
   text-align: left;
   font-size: var(--font-size-77xl);
-  color: var(--color-cadetblue-100);
-  font-family: var(--font-monofett);
+  color: var(--color-black);
+  font-family: var(--font-mina);
 }

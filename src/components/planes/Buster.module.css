@@ -29,9 +29,6 @@
   font-family: var(--font-monofett);
 }
 .launch {
-  position: relative;
-}
-.launchWrapper {
   position: absolute;
   height: 10.66%;
   top: 91.31%;
@@ -49,17 +46,20 @@
   font-size: var(--font-size-13xl);
   color: var(--color-white);
 }
-.uiChild {
+.busterselectedChild {
   position: absolute;
-  height: 46.53%;
-  top: 32.57%;
-  bottom: 20.91%;
+  height: 51.18%;
+  top: 30.24%;
+  bottom: 18.58%;
   left: calc(50% - 204.5px);
   max-height: 100%;
   width: 427.31px;
 }
-.thrustParent,
-.uiInner {
+.thrust {
+  position: relative;
+}
+.busterselectedInner,
+.thrustParent {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -68,7 +68,7 @@
 .thrustParent {
   width: 93px;
 }
-.uiInner {
+.busterselectedInner {
   position: absolute;
   height: 12.21%;
   top: 35.48%;
@@ -92,7 +92,7 @@
   text-align: center;
   font-size: var(--font-size-5xl);
 }
-.ui {
+.busterselected {
   width: 437px;
   height: 515.85px;
   text-align: left;

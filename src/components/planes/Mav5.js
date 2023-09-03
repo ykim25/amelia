@@ -1,23 +1,22 @@
 import styles from "./Mav5.module.css";
-
 const Mav5 = () => {
   return (
-    <div className={styles.ui}>
+    <div className={styles.mav5selected}>
       <div className={styles.rectangleParent}>
         <div className={styles.groupChild} />
         <div className={styles.lift}>
           <div className={styles.div}>MAV-5</div>
         </div>
       </div>
-      <div className={styles.launchWrapper}>
-        <div className={styles.launch}>launch</div>
+      <div className={styles.launch}>
+        <div className={styles.thrust}>launch</div>
       </div>
-      <img className={styles.uiChild} alt="" src="/group-211.svg" />
-      <div className={styles.uiInner}>
+      <img className={styles.mav5selectedChild} alt="" src="/group-211.svg" />
+      <div className={styles.mav5selectedInner}>
         <div className={styles.thrustParent}>
-          <div className={styles.launch}>Thrust: ++</div>
-          <div className={styles.launch}>{`Weight: - `}</div>
-          <div className={styles.launch}>Lift: +</div>
+          <div className={styles.thrust}>Thrust: ++</div>
+          <div className={styles.thrust}>{`Weight: - `}</div>
+          <div className={styles.thrust}>Lift: +</div>
         </div>
       </div>
       <div className={styles.wrapper}>

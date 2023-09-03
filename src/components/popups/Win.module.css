@@ -33,10 +33,10 @@
   bottom: -9.53%;
   left: -8.92%;
 }
-.playAgain1 {
+.playAgain {
   position: relative;
 }
-.playAgain {
+.playagain {
   position: absolute;
   height: 10.66%;
   top: 91.31%;
@@ -55,7 +55,7 @@
   color: var(--color-white);
   font-family: var(--font-mina);
 }
-.uiChild {
+.winChild {
   position: absolute;
   top: 140px;
   left: calc(50% - 177.5px);
@@ -63,7 +63,7 @@
   height: 294px;
   overflow: hidden;
 }
-.ui {
+.win {
   width: 437px;
   height: 515.85px;
   text-align: left;

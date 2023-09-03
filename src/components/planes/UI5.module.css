@@ -12,9 +12,9 @@
 .lift {
   position: absolute;
   height: 18.76%;
-  top: 3.01%;
-  bottom: 78.23%;
-  left: calc(50% - 136.5px);
+  top: 5.66%;
+  bottom: 75.58%;
+  left: calc(50% - 137.5px);
   width: 276px;
 }
 .rectangleParent {
@@ -29,11 +29,14 @@
   font-family: var(--font-monofett);
 }
 .launch {
+  position: relative;
+}
+.launchWrapper {
   position: absolute;
   height: 10.66%;
   top: 91.31%;
   bottom: -1.97%;
-  left: calc(50% - 98.5px);
+  left: calc(50% - 99.5px);
   border-radius: var(--br-base);
   background-color: var(--color-cadetblue-100);
   display: flex;
@@ -46,20 +49,17 @@
   font-size: var(--font-size-13xl);
   color: var(--color-white);
 }
-.mav5selectedChild {
+.uiChild {
   position: absolute;
-  height: 51.18%;
-  top: 30.24%;
-  bottom: 18.58%;
+  height: 46.53%;
+  top: 32.57%;
+  bottom: 20.91%;
   left: calc(50% - 204.5px);
   max-height: 100%;
   width: 427.31px;
 }
-.thrust {
-  position: relative;
-}
-.mav5selectedInner,
-.thrustParent {
+.thrustParent,
+.uiInner {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -68,7 +68,7 @@
 .thrustParent {
   width: 93px;
 }
-.mav5selectedInner {
+.uiInner {
   position: absolute;
   height: 12.21%;
   top: 35.48%;
@@ -84,15 +84,15 @@
 }
 .wrapper {
   height: 7.37%;
-  width: 8.7%;
+  width: 8.47%;
   top: 70.18%;
   right: 18.08%;
   bottom: 22.46%;
-  left: 73.23%;
+  left: 73.46%;
   text-align: center;
   font-size: var(--font-size-5xl);
 }
-.mav5selected {
+.ui {
   width: 437px;
   height: 515.85px;
   text-align: left;
