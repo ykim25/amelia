@@ -15,6 +15,7 @@ export default function Game() {
   const planes = [Orv9, Neha1, Melia, Tom6, Will7, Mav5, Buster];
 
   const CurrentPlane = planes[currentIndex];
+  const [showPlanes, setShowPlanes] = useState(false);
 
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev === 0 ? 0 : prev - 1));
@@ -32,6 +33,9 @@ export default function Game() {
         <source src='/background.mp4' type='video/mp4' />
         Your browser does not support the video tag.
       </video>
+      {/* later create a wrapper or something to contain current plane and buttons and conditionally render after user clicks start*/}
+      {/* {showPlanes && <CurrentPlane/>} */}
+      {/* or something like showPlanes && <PlaneSelectionWrapper/> <-- contains prev, next and launch */}
       <CurrentPlane />
       <div>
         <PreviousButton onClick={handlePrev} />
