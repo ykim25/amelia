@@ -1,5 +1,5 @@
-import styles from "./Neha1selected.module.css";
-const Neha1selected = () => {
+import styles from "./Neha1.module.css";
+const Neha1 = () => {
   return (
     <div className={styles.neha1selected}>
       <div className={styles.rectangleParent}>
@@ -26,4 +26,4 @@ const Neha1selected = () => {
   );
 };
 
-export default Neha1selected;
+export default Neha1;

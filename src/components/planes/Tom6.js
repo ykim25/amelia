@@ -1,5 +1,5 @@
-import styles from "./Tom6selected.module.css";
-const Tom6selected = () => {
+import styles from "./Tom6.module.css";
+const Tom6 = () => {
   return (
     <div className={styles.tom6selected}>
       <div className={styles.rectangleParent}>
@@ -26,4 +26,4 @@ const Tom6selected = () => {
   );
 };
 
-export default Tom6selected;
+export default Tom6;

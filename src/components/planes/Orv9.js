@@ -1,5 +1,5 @@
-import styles from "./Orv9selected.module.css";
-const Orv9selected = () => {
+import styles from "./Orv9.module.css";
+const Orv9 = () => {
   return (
     <div className={styles.orv9selected}>
       <div className={styles.rectangleParent}>
@@ -26,4 +26,4 @@ const Orv9selected = () => {
   );
 };
 
-export default Orv9selected;
+export default Orv9;
