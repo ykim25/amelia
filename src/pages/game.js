@@ -11,6 +11,7 @@ import NextButton from '../components/buttons/NextButton';
 import PreviousButton from '../components/buttons/PreviousButton';
 import axios from 'axios';
 import GameConditions from '../components/GameConditions';
+import LaunchButton from '../components/buttons/LaunchButton';
 
 export default function Game() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -154,8 +155,17 @@ export default function Game() {
   /////////////
 
   const planes = [Orv9, Neha1, Melia, Tom6, Will7, Mav5, Buster];
-
+  const planeNames = [
+    'Orv9',
+    'Neha1',
+    'Melia',
+    'Tom6',
+    'Will7',
+    'Mav5',
+    'Buster',
+  ];
   const CurrentPlane = planes[currentIndex];
+  const currentPlaneName = planeNames[currentIndex];
   const [showPlanes, setShowPlanes] = useState(false);
 
   const handlePrev = () => {
@@ -167,6 +177,8 @@ export default function Game() {
       prev === planes.length - 1 ? planes.length - 1 : prev + 1
     );
   };
+
+  console.log(`current plane: ${CurrentPlane}`);
 
   return (
     <div className={styles.backgroundContainer}>
@@ -186,6 +198,7 @@ export default function Game() {
       <div>
         <PreviousButton onClick={handlePrev} />
         <NextButton onClick={handleNext} />
+        <LaunchButton plane={currentPlaneName} />
       </div>
     </div>
   );
