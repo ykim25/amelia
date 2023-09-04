@@ -45,7 +45,7 @@ export default function Game() {
   //       );
 
   //       //LOCATION: Walnut, WINDSPEED:5.83, windDirection: 270.36
-  //       const windSpeedThreshold = 10; // Threshold on if wind has affect on plane
+  //       const windSpeedThreshold = 5; // Threshold on if wind has affect on plane
   //       const stormGlassData = windResponse.data;
   //       const windSpeed = stormGlassData.hours[0].windSpeed.icon;
   //       let windDirection;
@@ -192,7 +192,7 @@ export default function Game() {
       <GameConditions
         location={gameConditions.location}
         wind='ayy'
-        distance='yo'
+        distance={gameConditions.distance}
       />
       <CurrentPlane />
       <div>

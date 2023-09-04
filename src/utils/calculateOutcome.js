@@ -17,12 +17,11 @@ export const calculateOutcome = (currentPlane, gameConditions) => {
     Buster: 4,
   };
 
-  console.log(`game conditions: ${gameConditions.wind}`);
-
-  let windScore = 0; //fetch result
-
+  let windScore = gameConditions.windDirection;
+  console.log(`windscore: ${windScore}`);
   const baseScore = baseScores[currentPlane] || 0;
   let totalScore = baseScore + windScore;
+  console.log(`total score: ${totalScore}`);
   let animationStyle;
 
   switch (totalScore) {
