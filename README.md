@@ -1,10 +1,64 @@
+# Amelia
 
-  # Amelia
+**Project Description**: 
+- Create a project (ex. game, website, app) that showcases aerospace knowledge and uses the principles of aviation and computer science (must utilize an API or any sort of data to create their application).
 
-  Note: Please ensure you have installed <code><a href="https://nodejs.org/en/download/">nodejs</a></code>
+## Table of Contents
 
-  To preview and run the project on your device:
-  1) Open project folder in <a href="https://code.visualstudio.com/download">Visual Studio Code</a>
-  2) In the terminal, run `npm install`
-  3) Run `npm start` to view project in browser
-  
+- [Team Members](#team-members)
+- [Demo](#demo)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Team Members
+
+- Harrison Chang (LinkedIn: https://www.linkedin.com/in/harrison-chang1)
+- Yuri Kim (LinkedIn: https://www.linkedin.com/in/kim-yuri)
+- Jason Johnson (LinkedIn: https://www.linkedin.com/in/jasoncjohnson5) 
+- Neha Chawla (LinkedIn: https://www.linkedin.com/in/n-chawla)
+
+## Demo
+
+Provide a link to a live demo of your project or attach screenshots to showcase its functionality.
+
+## Technologies Used
+
+List the technologies, frameworks, and libraries you used for your project. For example:
+
+- HTML/CSS
+- JavaScript
+- React
+- Node.js
+
+## Installation
+
+Provide step-by-step instructions on how to install and set up your project locally. Include any dependencies that need to be installed and how to configure them. For example:
+
+1. Clone the repository: `git clone https://github.com/ykim25/amelia.git`
+2. Change directory: `cd amelia`
+3. Install dependencies: `npm install`
+4. Configure environment variables (if applicable).
+
+## Usage
+
+Explain how to use your project. Include examples of how to run the application and interact with it. For example:
+
+- To start the development server: `npm start`
+- Open the application in your web browser at `http://localhost:3000`
+
+## Contributing
+
+Explain how others can contribute to your project. Include guidelines for code contributions, bug reports, and feature requests. For example:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/new-feature`
+3. Make your changes and commit them: `git commit -m 'Add new feature'`
+4. Push to the branch: `git push origin feature/new-feature`
+5. Submit a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
