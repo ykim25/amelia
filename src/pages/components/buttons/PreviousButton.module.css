@@ -1,0 +1,17 @@
+.previous1 {
+  position: absolute;
+  cursor: pointer;
+  border: 1px solid red;
+  width: 250px;
+  height: 100px;
+  opacity: 0;
+  z-index: 100;
+}
+
+.previous {
+  position: absolute;
+  color: green;
+  left: 26%;
+  top: 45%;
+  cursor: pointer;
+}

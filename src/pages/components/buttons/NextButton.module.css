@@ -1,0 +1,17 @@
+.next1 {
+  position: absolute;
+  cursor: pointer;
+  border: 1px solid red;
+  width: 200px;
+  height: 100px;
+  opacity: 0;
+  z-index: 100;
+}
+
+.next {
+  position: absolute;
+  color: green;
+  left: 60%;
+  top: 45%;
+  cursor: pointer;
+}
