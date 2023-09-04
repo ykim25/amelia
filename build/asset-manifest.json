@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/amelia/static/css/main.a6cde52e.css",
+    "main.js": "/amelia/static/js/main.c500a10d.js",
+    "static/media/Win.png": "/amelia/static/media/Win.a525b78bc816811da78c.png",
+    "static/media/Lose.png": "/amelia/static/media/Lose.a5840924c93aa24970bf.png",
+    "static/media/Orv9.png": "/amelia/static/media/Orv9.63e521ef52ea46bc48fc.png",
+    "static/media/Will7.png": "/amelia/static/media/Will7.3f1260603fc3961ab965.png",
+    "static/media/Tom6.png": "/amelia/static/media/Tom6.da460103bc232af56dc6.png",
+    "static/media/Mav5.png": "/amelia/static/media/Mav5.060e519b8b17a2a56532.png",
+    "static/media/Neha1.png": "/amelia/static/media/Neha1.2f508a03d38f2de9a7f7.png",
+    "static/media/Buster.png": "/amelia/static/media/Buster.265b11b9a3ae74ec8377.png",
+    "static/media/Melia.png": "/amelia/static/media/Melia.a4df0c3d470aea6e6850.png",
+    "static/media/AmeliaLogo.png": "/amelia/static/media/AmeliaLogo.33355dae6bdff69ca086.png",
+    "index.html": "/amelia/index.html",
+    "main.a6cde52e.css.map": "/amelia/static/css/main.a6cde52e.css.map",
+    "main.c500a10d.js.map": "/amelia/static/js/main.c500a10d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6cde52e.css",
+    "static/js/main.c500a10d.js"
+  ]
+}
