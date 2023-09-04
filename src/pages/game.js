@@ -1,46 +1,44 @@
 import React, { useState } from 'react';
-import styles from './game.css'; // Ensure the correct path to your CSS file
-import Orv9 from '../components/planes/Orv9';
-import Neha1 from '../components/planes/Neha1';
-import Melia from '../components/planes/Melia';
-import Tom6 from '../components/planes/Tom6';
-import Will7 from '../components/planes/Will7';
-import Mav5 from '../components/planes/Mav5';
-import Buster from '../components/planes/Buster';
-import NextButton from '../components/buttons/NextButton';
-import PreviousButton from '../components/buttons/PreviousButton';
+import styles from './game.css';
+
+// Planes
+import Orv9 from '../pages/components/planes/Orv9.png';
+import Neha1 from '../pages/components/planes/Neha1.png';
+import Melia from '../pages/components/planes/Melia.png';
+import Tom6 from '../pages/components/planes/Tom6.png';
+import Will7 from '../pages/components/planes/Will7.png';
+import Mav5 from '../pages/components/planes/Mav5.png';
+import Buster from '../pages/components/planes/Buster.png';
+
+// Buttons
+import Launch from '../pages/components/buttons/Launch.png';
+import PlayAgain from '../pages/components/buttons/PlayAgain.png';
+import PlayButton from '../pages/components/buttons/PlayButton.png';
+
+// Popups
+import Win from '../pages/components/popups/Win.png';
+import Lose from '../pages/components/popups/Lose.png';
+
+// Logo
+import Logo from '../pages/components/logo/AmeliaLogo.png'
 
 export default function Game() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const planes = [Orv9, Neha1, Melia, Tom6, Will7, Mav5, Buster];
-
-  const CurrentPlane = planes[currentIndex];
-  const [showPlanes, setShowPlanes] = useState(false);
-
-  const handlePrev = () => {
-    setCurrentIndex((prev) => (prev === 0 ? 0 : prev - 1));
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prev) =>
-      prev === planes.length - 1 ? planes.length - 1 : prev + 1
-    );
-  };
 
   return (
     <div className={styles.backgroundContainer}>
+
       <video autoPlay loop muted playsInline>
         <source src='/background.mp4' type='video/mp4' />
         Your browser does not support the video tag.
       </video>
-      {/* later create a wrapper or something to contain current plane and buttons and conditionally render after user clicks start*/}
-      {/* {showPlanes && <CurrentPlane/>} */}
-      {/* or something like showPlanes && <PlaneSelectionWrapper/> <-- contains prev, next and launch */}
-      <CurrentPlane />
-      <div>
-        <PreviousButton onClick={handlePrev} />
-        <NextButton onClick={handleNext} />
-      </div>
+
+      <img
+        src={Logo}
+        alt="Orv9"
+        className='amelia-logo'
+      />
+
+      <img src={PlayButton} alt="Play" className='play-button' />
     </div>
   );
 }

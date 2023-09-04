@@ -15,3 +15,22 @@ video {
   object-fit: cover;
   /* Scale video to cover container */
 }
+
+.amelia-logo {
+  z-index: 1;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 3rem;
+  width: 764px;
+  height: 249px;
+}
+
+.play-button {
+  z-index: 2;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
