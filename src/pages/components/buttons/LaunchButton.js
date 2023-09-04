@@ -8,6 +8,7 @@ const LaunchButton = ({ plane, gameConditions }) => {
   const handleClick = () => {
     const result = calculateOutcome(plane, gameConditions);
     console.log(`result: ${result}`);
+    // navigate('/video/:id')
   };
   return (
     <div className={styles.launch} onClick={handleClick}>
