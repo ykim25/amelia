@@ -1,8 +1,8 @@
 import styles from './LaunchButton.module.css';
 import { calculateOutcome } from '../../utils/calculateOutcome';
-const LaunchButton = ({ plane }) => {
+const LaunchButton = ({ plane, gameConditions }) => {
   const handleClick = () => {
-    const result = calculateOutcome(plane);
+    const result = calculateOutcome(plane, gameConditions);
     console.log(`result: ${result}`);
   };
   return (

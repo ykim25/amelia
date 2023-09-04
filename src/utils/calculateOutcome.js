@@ -6,7 +6,7 @@ import Orv9 from '../components/planes/Orv9';
 import Tom6 from '../components/planes/Tom6';
 import Will7 from '../components/planes/Will7';
 
-export const calculateOutcome = (currentPlane) => {
+export const calculateOutcome = (currentPlane, gameConditions) => {
   const baseScores = {
     Orv9: -2,
     Neha1: 4,
@@ -16,6 +16,8 @@ export const calculateOutcome = (currentPlane) => {
     Mav5: 2,
     Buster: 4,
   };
+
+  console.log(`game conditions: ${gameConditions.wind}`);
 
   let windScore = 0; //fetch result
 

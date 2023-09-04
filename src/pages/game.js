@@ -198,7 +198,10 @@ export default function Game() {
       <div>
         <PreviousButton onClick={handlePrev} />
         <NextButton onClick={handleNext} />
-        <LaunchButton plane={currentPlaneName} />
+        <LaunchButton
+          plane={currentPlaneName}
+          gameConditions={gameConditions}
+        />
       </div>
     </div>
   );
