@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './video.css';
 import { useParams } from 'react-router-dom';
 import PlayAgainButton from './components/buttons/PlayAgainButton';
@@ -6,10 +6,20 @@ import PlayAgainButton from './components/buttons/PlayAgainButton';
 import PlayAgain from '../pages/components/buttons/PlayAgain.png';
 import Lose from '../pages/components/popups/Lose.png'
 import Win from '../pages/components/popups/Win.png'
+import Loading from './loading';
 
 
 
 export default function Video() {
+
+  const [loading, setLoading] = useState(true)
+  useEffect(() => {
+    const delay = setTimeout(() => {
+      setLoading(false);
+    }, 2000)
+
+    return () => clearTimeout(delay)
+  }, [])
   const { id } = useParams()
 
   const videos = {
@@ -38,7 +48,10 @@ export default function Video() {
   }
 
   console.log('AHA', videos[id])
-  return (
+
+  if (loading) {
+    return <Loading />
+  } return (
     <div className={styles.backgroundContainer}>
       <video autoPlay muted playsInline onEnded={handleVideoEnd}>
         <source src={videos[id]} type='video/mp4' />

@@ -1,0 +1,11 @@
+.gameConditions {
+  font-family: 'Be Vietnam Pro', 'Times New Roman';
+  font-weight: 400;
+  position: absolute;
+  margin-top: 4rem;
+  margin-left: 6rem;
+}
+
+.title {
+  margin-bottom: 0.5rem;
+}

@@ -11,6 +11,8 @@ import NextButton from './components/buttons/NextButton';
 import PreviousButton from './components/buttons/PreviousButton';
 import LaunchButton from './components/buttons/LaunchButton';
 import axios from 'axios'
+import GameConditions from './components/GameConditions';
+import Loading from './loading';
 
 export default function Game() {
 
@@ -18,8 +20,10 @@ export default function Game() {
   const [gameConditions, setGameConditions] = useState({
     location: null,
     windDirection: null,
+    windSpeed: null,
     distance: '25 mi'
   })
+
 
   // useEffect(() => {
   //   const fetchData = async () => {
@@ -103,13 +107,15 @@ export default function Game() {
     );
   };
 
+
+
   return (
     <div className={styles.backgroundContainer}>
       <video autoPlay loop muted playsInline>
         <source src='/background.mp4' type='video/mp4' />
         Your browser does not support the video tag.
       </video>
-
+      <GameConditions location={gameConditions.location} wind={gameConditions.windDirection} distance={gameConditions.distance} />
       <img
         src={planes[currentIndex]}
         alt="orv9"
