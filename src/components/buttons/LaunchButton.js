@@ -2,7 +2,6 @@ import styles from './LaunchButton.module.css';
 import { calculateOutcome } from '../../utils/calculateOutcome';
 const LaunchButton = ({ plane }) => {
   const handleClick = () => {
-    console.log(`current plane: ${plane}`);
     const result = calculateOutcome(plane);
     console.log(`result: ${result}`);
   };
