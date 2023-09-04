@@ -1,22 +1,13 @@
 import { useState } from 'react';
 import styles from './video.css';
-
-// import BUST3R_FlyThrough from "../pages/components/BUST3R_FlyThrough.mp4";
-// import BUST3R_Win from "../pages/components/BUST3R_Win.mp4";
-// import LOADING from "../pages/components/LOADING.mp4";
-// import Mav5_FlyThrough from "../pages/components/Mav5_FlyThrough.mp4";
-// import Mav5_Water from "../pages/components/Mav5_Water.mp4";
-// import Melia_Crash from "../pages/components/Melia_Crash.mp4";
-// import Melia_Water from "../pages/components/Melia_Water.mp4";
-// import Melia_Win from "../pages/components/Melia_Win.mp4";
-// import Neha1_Water from "../pages/components/Neha1_Water.mp4";
-// import Neha1_Win from "../pages/components/Neha1_Win.mp4";
-// import Orv9_Crash from "../pages/components/Orv9_Crash.mp4";
-// import Tom6_Crash from "../pages/components/Tom6_Crash.mp4";
-// import Tom6_Water from "../pages/components/Tom6_Water.mp4";
-// import Will7_FlyThrough from "../pages/components/Will7_FlyThrough.mp4";
-// import Will7_Water from "../pages/components/Will7_Water.mp4";
 import { useParams } from 'react-router-dom';
+import PlayAgainButton from './components/buttons/PlayAgainButton';
+
+import PlayAgain from '../pages/components/buttons/PlayAgain.png';
+import Lose from '../pages/components/popups/Lose.png'
+import Win from '../pages/components/popups/Win.png'
+
+
 
 export default function Video() {
   const { id } = useParams()
@@ -38,9 +29,7 @@ export default function Video() {
     14: '/Will7_Water.mp4',
     15: '/LOADING.mp4'
   }
-
-
-
+  const videoTitle = videos[id] || '';
   const [videoEnd, setVideoEnd] = useState(false);
   const [showPopUp, setShowPopUp] = useState(false)
   const handleVideoEnd = () => {
@@ -55,7 +44,22 @@ export default function Video() {
         <source src={videos[id]} type='video/mp4' />
         Your browser does not support the video tag.
       </video>
+      {videoEnd && (
+        <div>
+          {videoTitle.includes('Win') ? (
+            <>
+              <img src={Win} alt="Win" className='popup' />
+              <PlayAgainButton />
+            </>
+          ) : (
+            <>
+              <img src={Lose} alt="Lose" className='popup' />
+              <PlayAgainButton />
+            </>
+          )}
+        </div>
+      )}
     </div>
-  )
+  );
 }
 

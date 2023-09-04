@@ -6,6 +6,7 @@
   z-index: 400;
   top: 500px;
   opacity: 0;
+  cursor: pointer;
 }
 
 .launch {

@@ -1,8 +1,16 @@
-import styles from "./PLayAgainButton.module.css";
+import styles from "./PlayAgainButton.module.css";
+import { useNavigate } from "react-router-dom";
+
 const PlayAgainButton = () => {
+  const navigate = useNavigate()
+
+  const handleClick = () => {
+    navigate('/game')
+  }
+
   return (
-    <div className={styles.playagain}>
-      <div className={styles.playAgain}>play again</div>
+    <div className={styles.playAgain} onClick={handleClick}>
+      PLAY AGAIN WOOOO
     </div>
   );
 };
