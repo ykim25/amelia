@@ -27,7 +27,6 @@ List the technologies, frameworks, and libraries you used for your project. For 
 
 - HTML/CSS
 - JavaScript
-- Python
 - React
 - ipinfo API
 - stormGlass API
