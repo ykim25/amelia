@@ -7,7 +7,6 @@
 ## Table of Contents
 
 - [Team Members](#team-members)
-- [Demo](#demo)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
