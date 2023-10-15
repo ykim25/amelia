@@ -7,8 +7,6 @@ import PlayAgain from '../pages/components/buttons/PlayAgain.png';
 import Lose from '../pages/components/popups/Lose.png'
 import Win from '../pages/components/popups/Win.png'
 
-
-
 export default function Loading() {
   return (
     <div className={styles.backgroundContainer}>
