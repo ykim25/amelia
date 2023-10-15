@@ -7,7 +7,6 @@
 ## Table of Contents
 
 - [Team Members](#team-members)
-- [Demo](#demo)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -28,7 +27,6 @@ List the technologies, frameworks, and libraries you used for your project. For 
 - HTML/CSS
 - JavaScript
 - React
-- Python
 - ipinfo API
 - stormGlass API
 
