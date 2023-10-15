@@ -8,9 +8,9 @@ const GameConditions = ({ location, wind, distance }) => {
       {/* <div className={styles.title}>Location: {location} </div>
       <div className={styles.title}>Wind: {arrow} {wind} mph</div>
       <div>Distance: 25 mi</div> */}
-      <div className={styles.title}>Location: {Math.random()} </div>
-      <div className={styles.title}>Wind: {arrow} {Math.random()} mph</div>
-      <div className={styles.title}>Distance: {Math.random()} mi</div>
+      <div className={styles.title}>Location: {"Irvine, CA"} </div>
+      <div className={styles.title}>Wind: {arrow} {Math.round(Math.random() * 10) * 10} mph</div>
+      <div className={styles.title}>Distance: {Math.round(Math.random() * 10) * 10} mi</div>
     </div>
   );
 };
